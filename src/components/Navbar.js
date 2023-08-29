@@ -5,7 +5,6 @@ import './index.css';
 const Navbar = () => {
   const {pathname} = useLocation()
 
-  console.log(pathname);
     return (
         <div>
         <nav>
@@ -23,9 +22,9 @@ const Navbar = () => {
   
         <Outlet />
 
-        <footer>
+       { pathname === "/" && <footer>
           <h1>Footer</h1>
-        </footer>
+        </footer> }
       </div>
     )
 }
