@@ -10,13 +10,7 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/dashboard">Dashboard</Link>
-            </li>
-            <li>
-              <Link to="/nothing-here">Nothing Here</Link>
+              <Link to="/detail">Detail</Link>
             </li>
           </ul>
         </nav>
@@ -24,6 +18,10 @@ const Navbar = () => {
         <hr />
   
         <Outlet />
+
+        <footer>
+          <h1>Footer</h1>
+        </footer>
       </div>
     )
 }
