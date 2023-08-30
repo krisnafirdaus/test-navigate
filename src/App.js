@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Detail from './pages/Detail';
 import Product from './pages/Product';
 import Grid from './pages/Grid';
+import Flex from './pages/Flex';
 import Navbar from './components/Navbar';
 import './App.css';
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/detail" element={<Detail />} />
         <Route path=":id" element={<Product />} />
         <Route path="/grid" element={<Grid />} />
+        <Route path="/flex" element={<Flex />} />
       </Route>
     </Routes>
   );

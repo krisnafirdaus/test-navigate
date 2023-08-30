@@ -1,0 +1,15 @@
+.flex-container {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 100vh;
+
+}
+
+.flex-container div {
+   padding: 20px;
+   margin-right: 10px;
+   background-color: red;
+   color: white;
+}
