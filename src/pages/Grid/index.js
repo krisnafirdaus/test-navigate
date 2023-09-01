@@ -1,20 +1,36 @@
 import React from "react";
-import  './index.css';
+import { styled } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
 
-const Grid = () => {
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
 
+const GridComponent = () => {
     return (
-        <div class="grid-container">
-            <div class="item1">1</div>
-            <div class="item2">2</div>
-            <div class="item3">3</div>  
-            <div class="item4">4</div>
-            <div class="item5">5</div>
-            <div class="item6">6</div>
-            <div class="item7">7</div>
-            <div class="item8">8</div>  
-        </div>
+        <Box sx={{ flexGrow: 1 }}>
+        <Grid container spacing={2}>
+        <Grid item xs={12} sm={6} md={4}>
+          <Item>xs=8</Item>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <Item>xs=4</Item>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <Item>xs=4</Item>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <Item>xs=8</Item>
+        </Grid>
+      </Grid>
+      </Box>
     )
 }
 
-export default Grid;
+export default GridComponent;

@@ -19,7 +19,7 @@ const Home = () => {
     ]
 
     return (
-        <div>
+        <div className="detail">
             <h1>Home</h1>
 
             <Button variant="contained" sx={{
